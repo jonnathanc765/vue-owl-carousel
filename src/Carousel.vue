@@ -292,7 +292,7 @@ export default {
 
     events.forEach((eventName) => {
       owl.on(`${eventName}.owl.carousel`, (event) => {
-        this.$emit(eventName, event);
+        this.$emit(eventName, {event, owl});
       });
     });
 
